@@ -1,3 +1,7 @@
+# Lecture Materials
+- Git lecture video https://www.youtube.com/watch?v=iJm0xflVz_8
+- Lecture pptx files https://drive.google.com/drive/folders/0B4OuEuZP2SJYNnhKX0dxTk5ILU0?usp=sharing
+
 # SimpleJ2EEProject
 Simple java 2 EE project fro TI karazin java course
 
@@ -7,3 +11,4 @@ Simple java 2 EE project fro TI karazin java course
 - Make commit/push
 - Make branch/merge
 - Debug Servlet"
+
