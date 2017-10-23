@@ -1,6 +1,7 @@
 # Lecture Materials
 - Git lecture video https://www.youtube.com/watch?v=iJm0xflVz_8
-- Lecture pptx files https://drive.google.com/drive/folders/0B4OuEuZP2SJYNnhKX0dxTk5ILU0?usp=sharing
+- Lecture pptx files https://drive.google.com/drive/folders/0B4OuEuZP2SJYUTR4RjNNeXI3ZGM?usp=sharing
+- Contact me andreydemosoft@gmail.com
 
 # SimpleJ2EEProject
 Simple java 2 EE project fro TI karazin java course
