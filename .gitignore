@@ -44,6 +44,10 @@ hs_err_pid*
 .idea/**/gradle.xml
 .idea/**/libraries
 
+.idea/
+SimpleJ2EEProject.iml
+
+
 # CMake
 cmake-build-debug/
 
