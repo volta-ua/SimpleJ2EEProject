@@ -14,6 +14,9 @@
 - Merge branch newHelloText to master, push
 - Merge branch newServlet to master, push
 - run "mvn package" and  Deploy web-app.war to tomcat
+- Connect to tomcat debug port
+- create breakpoint in servlet
+- Change hello text from debug to "broken Hello" 
 - Show result to lecture
 
 
