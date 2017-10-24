@@ -1,0 +1,1 @@
+set JAVA_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,address=8000,suspend=n,server=y

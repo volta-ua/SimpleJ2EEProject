@@ -1,3 +1,8 @@
+# Project manual
+- copy setenv.bat to {tomcatDir}/bin to enable debug port 8000
+- to create war artifact run "mvn package" (maven should be installed and configured)
+ (https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
+
 # Lecture Materials
 - Git lecture video https://www.youtube.com/watch?v=iJm0xflVz_8
 - Lecture pptx files https://drive.google.com/drive/folders/0B4OuEuZP2SJYUTR4RjNNeXI3ZGM?usp=sharing
