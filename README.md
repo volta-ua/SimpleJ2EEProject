@@ -67,12 +67,13 @@ https://start.spring.io/
 
    4. Mark method with following annotation 
 
-        @RequestMapping(value = "/index.html", method = RequestMethod.GET)
-
+            @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+        
    5. Check that you have right imports 
 
-         import org.springframework.web.bind.annotation.RequestMapping;
-         import org.springframework.web.bind.annotation.RequestMethod;
-         import org.springframework.web.bind.annotation.RestController; 
+           import org.springframework.web.bind.annotation.RequestMapping;
+           import org.springframework.web.bind.annotation.RequestMethod;
+           import org.springframework.web.bind.annotation.RestController; 
+           
    6. Run DemoApplication.main()
    7. Check result http://localhost:8080/index.html
