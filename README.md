@@ -61,19 +61,41 @@ https://start.spring.io/
    2. Mark class with @RestController Annotation
    3. Create Method 
 
-             public String index(){
+          public String index(){
               return "<html><body><h1>Hello</h1></body></html>";
-            }
+          }
 
    4. Mark method with following annotation 
 
-            @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+          @RequestMapping(value = "/index.html", method = RequestMethod.GET)
         
    5. Check that you have right imports 
 
-           import org.springframework.web.bind.annotation.RequestMapping;
-           import org.springframework.web.bind.annotation.RequestMethod;
-           import org.springframework.web.bind.annotation.RestController; 
+          import org.springframework.web.bind.annotation.RequestMapping;
+          import org.springframework.web.bind.annotation.RequestMethod;
+          import org.springframework.web.bind.annotation.RestController; 
            
    6. Run DemoApplication.main()
    7. Check result http://localhost:8080/index.html
+2. Spring boot configuration
+   1. Find file /src/main/resources/application.properties
+   2. Put following config
+   
+          server.port=8081
+          
+   3. Chek results on new port
+   4. Add following config to /src/main/resources/application.properties
+   
+          custom.message=Hello My friend
+   5. Add Filed and constructor to your controller 
+       
+           private final String msg;
+
+          public NewController(@Value("${custom.message}") String msg) {
+              this.msg = msg;
+          }
+    6. Pay Atentions on following code in construictor. (It is injection of value from config files)
+    
+           @Value("${custom.message}") String msg
+    7. Change your method to dispaly varibe "msg" on yopur page 
+    8. Check results
