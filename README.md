@@ -60,12 +60,19 @@ https://start.spring.io/
    1. Create class NewController
    2. Mark class with @RestController Annotation
    3. Create Method 
-       public String index(){
-        return "<html><body><h1>Hello</h1></body></html>";
-      }
+
+             public String index(){
+              return "<html><body><h1>Hello</h1></body></html>";
+            }
+
    4. Mark method with following annotation 
+
         @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+
    5. Check that you have right imports 
+
          import org.springframework.web.bind.annotation.RequestMapping;
          import org.springframework.web.bind.annotation.RequestMethod;
          import org.springframework.web.bind.annotation.RestController; 
+   6. Run DemoApplication.main()
+   7. Check result http://localhost:8080/index.html
