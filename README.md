@@ -47,10 +47,25 @@ https://start.spring.io/
 # Practice task 2:
 
 1. Dowload and Import new spring project
- 1. Open https://start.spring.io/
- 2. Select maven spring boot project with version 1.5.8
- 3. Search for dependency named "Web" and add it
- 4. Click Generate project
- 5. Unzip
- 6. Import as new maven project
-7. 
+   1. Open https://start.spring.io/
+   2. Select maven spring boot project with version 1.5.8
+   3. Search for dependency named "Web" and add it
+   4. Click Generate project
+   5. Unzip
+   6. Import as new maven project
+   7. Wait when all dependecies will be resolved
+   8. Check tha you have DemoApplication.java file
+   
+2. Create Controller
+   1. Create class NewController
+   2. Mark class with @RestController Annotation
+   3. Create Method 
+       public String index(){
+        return "<html><body><h1>Hello</h1></body></html>";
+      }
+   4. Mark method with following annotation 
+        @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+   5. Check that you have right imports 
+         import org.springframework.web.bind.annotation.RequestMapping;
+         import org.springframework.web.bind.annotation.RequestMethod;
+         import org.springframework.web.bind.annotation.RestController; 
