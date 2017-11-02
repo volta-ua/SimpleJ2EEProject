@@ -55,69 +55,69 @@ https://start.spring.io/
    6. Import as new maven project
    7. Wait when all dependecies will be resolved
    8. Check tha you have DemoApplication.java file
-   
+
 2. Create Controller
    1. Add required dependencies to pom.xml (wait for resolving maven dependencies before start)
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-tomcat</artifactId>
-</dependency>
+      ```xml
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+      </dependency>
 
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-</dependency>
-```
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+      </dependency>
+      ```
    2. Create class NewController
    3. Mark class with @RestController Annotation
    4. Create Method 
-```java
-public String index(){
-    return "<html><body><h1>Hello</h1></body></html>";
-}
-```
+      ```java
+      public String index(){
+          return "<html><body><h1>Hello</h1></body></html>";
+      }
+      ```
    5. Mark method with following annotation 
-```java
-@RequestMapping(value = "/index.html", method = RequestMethod.GET)
-```        
+      ```java
+      @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+      ```        
    6. Check that you have right imports 
-```java
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController; 
-```
+      ```java
+      import org.springframework.web.bind.annotation.RequestMapping;
+      import org.springframework.web.bind.annotation.RequestMethod;
+      import org.springframework.web.bind.annotation.RestController; 
+      ```
    7. Run DemoApplication.main()
    8. Check result http://localhost:8080/index.html
 
 2. Spring boot configuration
    1. Find file /src/main/resources/application.properties
    2. Put following config
-```
-server.port=8081
-```          
+      ```
+      server.port=8081
+      ```          
    3. Chek results on new port
    4. Add following config to /src/main/resources/application.properties
-```
-custom.message=Hello My friend
-```
+      ```
+      custom.message=Hello My friend
+      ```
    5. Add Filed and constructor to your controller 
-```java
-private final String msg;
+      ```java
+      private final String msg;
 
-public NewController(@Value("${custom.message}") String msg) {
-    this.msg = msg;
-}
-```
+      public NewController(@Value("${custom.message}") String msg) {
+          this.msg = msg;
+      }
+      ```
    6. Pay Atentions on following code in construictor. (It is injection of value from config files)
-```java
-@Value("${custom.message}") String msg
-```
+      ```java
+      @Value("${custom.message}") String msg
+      ```
    7. Change your method to dispaly variable "msg" on yopur page
-```java
-@RequestMapping(value = "/index.html", method = RequestMethod.GET)
-public String index(){
-    return "<html><body><h1>" + msg + "</h1></body></html>";
-}
-```
+      ```java
+      @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+      public String index(){
+          return "<html><body><h1>" + msg + "</h1></body></html>";
+      }
+      ```
    8. Check results
