@@ -69,26 +69,26 @@ https://start.spring.io/
     <artifactId>spring-webmvc</artifactId>
 </dependency>
 ```
-   1. Create class NewController
-   2. Mark class with @RestController Annotation
-   3. Create Method 
+   2. Create class NewController
+   3. Mark class with @RestController Annotation
+   4. Create Method 
 ```java
 public String index(){
     return "<html><body><h1>Hello</h1></body></html>";
 }
 ```
-   4. Mark method with following annotation 
+   5. Mark method with following annotation 
 ```java
 @RequestMapping(value = "/index.html", method = RequestMethod.GET)
 ```        
-   5. Check that you have right imports 
+   6. Check that you have right imports 
 ```java
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController; 
 ```
-   6. Run DemoApplication.main()
-   7. Check result http://localhost:8080/index.html
+   7. Run DemoApplication.main()
+   8. Check result http://localhost:8080/index.html
 
 2. Spring boot configuration
    1. Find file /src/main/resources/application.properties
