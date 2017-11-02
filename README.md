@@ -57,7 +57,7 @@ https://start.spring.io/
    8. Check tha you have DemoApplication.java file
 
 2. Create Controller
-   1. Add required dependencies to pom.xml (wait for resolving maven dependencies before start)
+   1. Check required dependencies in pom.xml (wait for resolving dependencies after any pom.xml updates before start application)
       ```xml
       <dependency>
           <groupId>org.springframework.boot</groupId>
